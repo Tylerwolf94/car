@@ -17,7 +17,7 @@ function addToCart(itemName, itemPrice) {
     btn.innerHTML = 'x';
     li.appendChild(btn);
 
-    btn.addEventListener('click', ()=> removeElem(`cart-button-${len}`, itemPrice))
+    btn.addEventListener('click', ()=> removeElem(`cart-button-${len}`,itemName, itemPrice))
 
     cartItems.appendChild(li);
 
@@ -27,11 +27,13 @@ function addToCart(itemName, itemPrice) {
     document.getElementById('cart').style.display = 'block'; // Show cart when item added
 }
 
-const removeElem = (id, price) => {
+const removeElem = (id,name, price) => {
     const item = document.getElementById(id);
     total -= price;
 
     if(item) cartItems.removeChild(item);
+
+    cart.splice(cart.indexOf({name, price}), 1);
 
     document.getElementById('total-price').textContent = `Total: Ksh ${total.toFixed(2)}`;
     document.getElementById('cart-count').textContent = cart.length;
