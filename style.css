@@ -1,0 +1,274 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #020c18;
+}
+
+header {
+    background-color: #080c3b;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header a {
+    color: white;
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+nav a {
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: beige;
+    width: 200px;
+    font-size:15px;
+    font-weight: bold;
+    color: #180a47;
+}
+.product img{
+    width: 150px;
+    height: 150px;
+}
+.product button {
+    background-color: #180a47;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.product button:hover {
+    background-color: #0e6188;
+}
+
+/* Sidebar */
+aside {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f7f316;
+    width: 300px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    display: none; /* Initially hidden */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#close-cart {
+    cursor: pointer;
+    font-size: 24px;
+    color: #10cc3f;
+}
+
+#cart h2 {
+    margin: 0;
+}
+#about {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+#about h2 {
+    color: #4CAF50;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#about p {
+    color: #333;
+    line-height: 1.5;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#contact {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    color: #4CAF50;
+    font-size: 40px;
+}
+
+#contact p {
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 25px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact label {
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+#contact input, 
+#contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #101611;
+}
+.social-links {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.social-links h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp {
+    background-color: #25D366; /* WhatsApp Green */
+}
+
+.whatsapp:hover {
+    background-color: #041a0c;
+}
+
+.facebook {
+    background-color: #3b5998; /* Facebook Blue */
+}
+
+.facebook:hover {
+    background-color: #030918;
+}
+
+.instagram {
+    background-color: #e1306c; /* Instagram Pink */
+}
+
+.instagram:hover {
+    background-color: #290410;
+}
+
+.twitter {
+    background-color: #2f3133; /* Twitter Blue */
+}
+
+.twitter:hover {
+    background-color: #0a0a0a;
+}
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f39c12;
+}
+
+.footer p {
+    margin: 0;
+}
