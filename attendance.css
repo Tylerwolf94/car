@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1827;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #1fd419;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+form {
+    background-color: #16474b;
+    padding: 20px;
+    border: 10px solid #ccc;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+label{
+    font-size: 25px;
+}
+label,option{
+    color: rgb(204, 216, 33);
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+}
+button{
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #1f1f1f;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #1f1f1f;
+    color: #fff;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+footer {
+    background-color: #13071a;
+    color: #158ac0;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 600px;
+}
+
+.footer-left p {
+    margin: 0;
+    font-size: 14px;
+    font-size: 20px;
+}
